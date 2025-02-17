@@ -18,6 +18,10 @@ jobs:
       with:
         python-version: '3.9'  # Specify the Python version you need
 
+    - name: Update pip
+      run: |
+        python -m pip install --upgrade pip
+
     - name: Install dependencies
       run: |
         pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
